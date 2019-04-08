@@ -1,6 +1,6 @@
 {
   "name": "85ido-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "'85前端项目生成脚手架'",
   "main": "bin/85ido.js",
   "scripts": {
