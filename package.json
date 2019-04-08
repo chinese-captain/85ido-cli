@@ -2,14 +2,14 @@
   "name": "85ido-cli",
   "version": "1.0.1",
   "description": "'85前端项目生成脚手架'",
-  "main": "bin/85ido.js",
+  "main": "bin/85ido-init.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chikinlee/85ido-cli.git"
+    "url": "git+https://github.com/chinese-captain/85ido-cli.git"
   },
   "author": "chikinlee",
   "license": "MIT",
@@ -17,9 +17,9 @@
     "url": "gitignore/issues"
   },
   "bin": {
-    "85-cli": "bin/85ido.js"
+    "85-cli": "bin/85ido-init.js"
   },
-  "homepage": "https://github.com/chikinlee/85ido-cli#readme",
+  "homepage": "https://github.com/chinese-captain/85ido-cli#readme",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",

@@ -4,7 +4,7 @@ const fs = require('fs')
 const download = require('../lib/download')
 const generator = require('../lib/generator')
 const process = require('process')
-// const spawn = require('react-dev-utils/crossSpawn');
+const config = require('../package.json')
 
 // 命令行交互工具
 const program = require('commander')
@@ -19,12 +19,14 @@ const chalk = require('chalk')
 // Colored symbols for various log levels
 const logSymbols = require('log-symbols')
 
-program.usage('<project-name>')
+program.version(config.version, '-v, --version')
+  .usage('<command>')
+  .usage('<project-name>')
   // .option('-t, --type [template-type]', 'assign to template type "pc" or "mob"', 'pc')
   .parse(process.argv)
-
+console.log(JSON.stringify(process.argv))
 let projectType='pc'
-let projectName = program.args[0]
+let projectName = program.args[1]
 
 if (!projectName) {  // project-name 必填
   // 相当于执行命令的--help选项，显示help信息，这是commander内置的一个命令选项
